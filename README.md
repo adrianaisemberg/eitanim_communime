@@ -1,2 +1,2 @@
 # eitanim_communime
-An Eitanim high-school students hackathon
+An Eitanim high-school students hackathon project
