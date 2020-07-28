@@ -12,7 +12,7 @@ import retrofit2.http.POST
 interface CommuniMeApi {
 
     @POST("/api/users")
-    suspend fun signUp(@Body request: SignUpRequests)
+    suspend fun signUp(@Body request: SignUpRequests): Any
 
     @POST("/api/users")
     suspend fun signIn(@Body request: SignInRequests)
