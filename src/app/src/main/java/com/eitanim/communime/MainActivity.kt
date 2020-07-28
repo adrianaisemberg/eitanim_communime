@@ -1,7 +1,9 @@
 package com.eitanim.communime
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.eitanim.communime.api.CommuniMeService
 
 class MainActivity : AppCompatActivity() {
@@ -9,12 +11,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        async_io {
-            test()
+        findViewById<Button>(R.id.buttonsignup).setOnClickListener {
+            signUp()
         }
+
+
     }
 
-    private suspend fun test() {
-        val list = CommuniMeService.api().activityRatings()
+    private fun signUp(){
+        val intent = Intent(this, SignUpActivity::class.java)
+
+        startActivity(intent)
     }
+
 }
