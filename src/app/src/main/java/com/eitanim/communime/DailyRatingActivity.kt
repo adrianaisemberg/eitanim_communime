@@ -26,24 +26,33 @@ class DailyRatingActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.dailyrating_button_1).setOnClickListener {
             DailyStar_1()
+            DisplayContinueButton()
         }
 
         findViewById<Button>(R.id.dailyrating_button_2).setOnClickListener {
             DailyStar_2()
+            DisplayContinueButton()
         }
 
         findViewById<Button>(R.id.dailyrating_button_3).setOnClickListener {
             DailyStar_3()
+            DisplayContinueButton()
         }
 
         findViewById<Button>(R.id.dailyrating_button_4).setOnClickListener {
             DailyStar_4()
+            DisplayContinueButton()
         }
 
         findViewById<Button>(R.id.dailyrating_button_5).setOnClickListener {
             DailyStar_5()
+            DisplayContinueButton()
         }
 
+    }
+
+    private fun DisplayContinueButton(){
+        button_dailyrating_continue.visibility = VISIBLE
     }
 
     private fun DailyStar_1() {

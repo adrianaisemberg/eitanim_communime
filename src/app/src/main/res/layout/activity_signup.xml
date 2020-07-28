@@ -14,14 +14,7 @@
         android:layout_marginTop="45dp"
         tools:ignore="ContentDescription" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textStyle="bold"
-        android:textSize="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"/>
+
 
 
     <LinearLayout
@@ -30,6 +23,15 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"/>
 
         <EditText
             android:id="@+id/text_username"
