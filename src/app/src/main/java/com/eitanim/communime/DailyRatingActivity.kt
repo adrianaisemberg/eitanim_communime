@@ -55,6 +55,14 @@ class DailyRatingActivity : AppCompatActivity() {
         button_dailyrating_continue.visibility = VISIBLE
     }
 
+    private fun hideAllHalfStars(){
+        hide(dailyhalf_star_1)
+        hide(dailyhalf_star_2)
+        hide(dailyhalf_star_3)
+        hide(dailyhalf_star_4)
+        hide(dailyhalf_star_5)
+    }
+
     private fun DailyStar_1() {
         if(numStars != 1.0) {
             hide(dailyunfilled_star_1)
@@ -63,26 +71,13 @@ class DailyRatingActivity : AppCompatActivity() {
             show(dailyunfilled_star_4)
             show(dailyunfilled_star_5)
 
-            hide(dailyhalf_star_1)
-            hide(dailyhalf_star_2)
-            hide(dailyhalf_star_3)
-            hide(dailyhalf_star_4)
-            hide(dailyhalf_star_5)
+            hideAllHalfStars()
             numStars = 1.0
         }
 
         else{
             show(dailyunfilled_star_1)
-            show(dailyunfilled_star_2)
-            show(dailyunfilled_star_3)
-            show(dailyunfilled_star_4)
-            show(dailyunfilled_star_5)
-
             show(dailyhalf_star_1)
-            hide(dailyhalf_star_2)
-            hide(dailyhalf_star_3)
-            hide(dailyhalf_star_4)
-            hide(dailyhalf_star_5)
             numStars = 0.5
         }
 
@@ -96,21 +91,12 @@ class DailyRatingActivity : AppCompatActivity() {
             show(dailyunfilled_star_4)
             show(dailyunfilled_star_5)
 
-            hide(dailyhalf_star_1)
-            hide(dailyhalf_star_2)
-            hide(dailyhalf_star_3)
-            hide(dailyhalf_star_4)
-            hide(dailyhalf_star_5)
+            hideAllHalfStars()
             numStars = 2.0
         }
 
         else{
-            hide(dailyunfilled_star_1)
             show(dailyunfilled_star_2)
-            show(dailyunfilled_star_3)
-            show(dailyunfilled_star_4)
-            show(dailyunfilled_star_5)
-
             show(dailyhalf_star_2)
             numStars = 1.5
         }
@@ -124,20 +110,13 @@ class DailyRatingActivity : AppCompatActivity() {
             show(dailyunfilled_star_4)
             show(dailyunfilled_star_5)
 
-            hide(dailyhalf_star_1)
-            hide(dailyhalf_star_2)
-            hide(dailyhalf_star_3)
-            hide(dailyhalf_star_4)
-            hide(dailyhalf_star_5)
+            hideAllHalfStars()
             numStars = 3.0
         }
 
         else{
-            hide(dailyunfilled_star_1)
-            hide(dailyunfilled_star_2)
+
             show(dailyunfilled_star_3)
-            show(dailyunfilled_star_4)
-            show(dailyunfilled_star_5)
 
             show(dailyhalf_star_3)
             numStars = 2.5
@@ -152,11 +131,7 @@ class DailyRatingActivity : AppCompatActivity() {
             hide(dailyunfilled_star_4)
             show(dailyunfilled_star_5)
 
-            hide(dailyhalf_star_1)
-            hide(dailyhalf_star_2)
-            hide(dailyhalf_star_3)
-            hide(dailyhalf_star_4)
-            hide(dailyhalf_star_5)
+            hideAllHalfStars()
             numStars = 4.0
         }
 
@@ -176,11 +151,7 @@ class DailyRatingActivity : AppCompatActivity() {
             hide(dailyunfilled_star_4)
             hide(dailyunfilled_star_5)
 
-            hide(dailyhalf_star_1)
-            hide(dailyhalf_star_2)
-            hide(dailyhalf_star_3)
-            hide(dailyhalf_star_4)
-            hide(dailyhalf_star_5)
+            hideAllHalfStars()
             numStars = 5.0
         }
         else{
