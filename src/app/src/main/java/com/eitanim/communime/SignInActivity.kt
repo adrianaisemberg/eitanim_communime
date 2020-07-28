@@ -27,5 +27,9 @@ class SignInActivity : AppCompatActivity() {
             val password = findViewById<EditText>(R.id.text_password_signin).text.toString()
             CommuniMeService.api().signIn(SignInRequests(email, password))
         }
+
+        val intent = Intent(this, DailyRatingActivity::class.java)
+
+        startActivity(intent)
     }
 }
