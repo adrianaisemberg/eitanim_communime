@@ -25,6 +25,7 @@
         android:textStyle="bold" />
 
     <EditText
+        android:inputType="text"
         android:id="@+id/text_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
         android:maxLines="1" />
 
     <EditText
+        android:inputType="text"
         android:id="@+id/text_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
         android:maxLines="1" />
 
     <EditText
+        android:inputType="text"
         android:id="@+id/text_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

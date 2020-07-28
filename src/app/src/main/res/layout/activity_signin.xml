@@ -23,6 +23,7 @@
 
         <EditText
             android:id="@+id/text_email_signin"
+            android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -33,6 +34,7 @@
             android:maxLines="1" />
         <EditText
             android:id="@+id/text_password_signin"
+            android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
