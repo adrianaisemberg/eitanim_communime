@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--    <ImageView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:layout_marginTop="0dp"-->
-    <!--        android:src="@drawable/rectangle_2__1_"-->
-    <!--        tools:ignore="ContentDescription" />-->
-
-    <!--    <ImageView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:layout_marginTop="90dp"-->
-    <!--        android:layout_marginLeft="0dp"-->
-    <!--        android:src="@drawable/rectangle_1"-->
-    <!--        tools:ignore="ContentDescription" />-->
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,22 +21,32 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/text_email_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLines="1"
+            android:layout_marginBottom="10dp"
+            android:hint="Email..."/>
+        <EditText
+            android:id="@+id/text_password_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLines="1"
+            android:hint="Password..."/>
         <Button
-            android:id="@+id/buttonsignup"
+            android:id="@+id/button_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="#F97979"
-            android:text="@string/signup" />
-
-        <Button
-            android:id="@+id/buttonsignin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:background="#00FFFFFF"
-            android:text="@string/login" />
+            android:layout_marginTop="100dp"
+            android:text="Sign In" />
 
     </LinearLayout>
 
 </RelativeLayout>
+

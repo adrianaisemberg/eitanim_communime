@@ -1,5 +1,6 @@
 package com.eitanim.communime.api
 
+import com.eitanim.communime.api.requests.SignInRequests
 import com.eitanim.communime.api.requests.SignUpRequests
 import com.eitanim.communime.api.responses.ActivityRating
 import okhttp3.Call
@@ -12,6 +13,9 @@ interface CommuniMeApi {
 
     @POST("/api/users")
     suspend fun signUp(@Body request: SignUpRequests)
+
+    @POST("/api/users")
+    suspend fun signIn(@Body request: SignInRequests)
 
     @GET("/api/activityrating")
     suspend fun activityRatings(): List<ActivityRating>

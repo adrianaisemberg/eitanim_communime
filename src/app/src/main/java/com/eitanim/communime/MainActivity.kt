@@ -15,11 +15,19 @@ class MainActivity : AppCompatActivity() {
             signUp()
         }
 
-
+        findViewById<Button>(R.id.buttonsignin).setOnClickListener {
+            signIn()
+        }
     }
 
     private fun signUp(){
         val intent = Intent(this, SignUpActivity::class.java)
+
+        startActivity(intent)
+    }
+
+    private fun signIn(){
+        val intent = Intent(this, SignInActivity::class.java)
 
         startActivity(intent)
     }
