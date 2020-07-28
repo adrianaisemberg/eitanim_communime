@@ -22,26 +22,33 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/text_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
-            android:hint="User Name..."/>
+            android:hint="User Name..."
+            android:maxLines="1"/>
         <EditText
+            android:id="@+id/text_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
+            android:maxLines="1"
             android:layout_marginBottom="10dp"
             android:hint="Email..."/>
         <EditText
+            android:id="@+id/text_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
+            android:maxLines="1"
             android:hint="Password..."/>
         <Button
+            android:id="@+id/button_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#F97979"

@@ -1,13 +1,17 @@
 package com.eitanim.communime.api
 
+import com.eitanim.communime.api.requests.SignUpRequests
 import com.eitanim.communime.api.responses.ActivityRating
 import okhttp3.Call
+import okhttp3.Request
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 
 interface CommuniMeApi {
 
-    @GET("/test")
-    suspend fun test(): Call
+    @POST("/api/users")
+    suspend fun signUp(@Body request: SignUpRequests)
 
     @GET("/api/activityrating")
     suspend fun activityRatings(): List<ActivityRating>
