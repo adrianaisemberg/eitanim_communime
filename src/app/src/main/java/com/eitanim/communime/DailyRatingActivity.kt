@@ -16,6 +16,8 @@ import com.eitanim.communime.api.requests.SignInRequests
 import com.eitanim.communime.api.requests.SignUpRequests
 import kotlinx.android.synthetic.main.activity_dailyrating.*
 
+var numStars = 0.0
+
 class DailyRatingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,43 +47,139 @@ class DailyRatingActivity : AppCompatActivity() {
     }
 
     private fun DailyStar_1() {
-        hide(dailyunfilled_star_1)
-        show(dailyunfilled_star_2)
-        show(dailyunfilled_star_3)
-        show(dailyunfilled_star_4)
-        show(dailyunfilled_star_5)
+        if(numStars != 1.0) {
+            hide(dailyunfilled_star_1)
+            show(dailyunfilled_star_2)
+            show(dailyunfilled_star_3)
+            show(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            hide(dailyhalf_star_1)
+            hide(dailyhalf_star_2)
+            hide(dailyhalf_star_3)
+            hide(dailyhalf_star_4)
+            hide(dailyhalf_star_5)
+            numStars = 1.0
+        }
+
+        else{
+            show(dailyunfilled_star_1)
+            show(dailyunfilled_star_2)
+            show(dailyunfilled_star_3)
+            show(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            show(dailyhalf_star_1)
+            hide(dailyhalf_star_2)
+            hide(dailyhalf_star_3)
+            hide(dailyhalf_star_4)
+            hide(dailyhalf_star_5)
+            numStars = 0.5
+        }
+
     }
 
     private fun DailyStar_2() {
-        hide(dailyunfilled_star_1)
-        hide(dailyunfilled_star_2)
-        show(dailyunfilled_star_3)
-        show(dailyunfilled_star_4)
-        show(dailyunfilled_star_5)
+        if(numStars != 2.0) {
+            hide(dailyunfilled_star_1)
+            hide(dailyunfilled_star_2)
+            show(dailyunfilled_star_3)
+            show(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            hide(dailyhalf_star_1)
+            hide(dailyhalf_star_2)
+            hide(dailyhalf_star_3)
+            hide(dailyhalf_star_4)
+            hide(dailyhalf_star_5)
+            numStars = 2.0
+        }
+
+        else{
+            hide(dailyunfilled_star_1)
+            show(dailyunfilled_star_2)
+            show(dailyunfilled_star_3)
+            show(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            show(dailyhalf_star_2)
+            numStars = 1.5
+        }
     }
 
     private fun DailyStar_3() {
-        hide(dailyunfilled_star_1)
-        hide(dailyunfilled_star_2)
-        hide(dailyunfilled_star_3)
-        show(dailyunfilled_star_4)
-        show(dailyunfilled_star_5)
+        if(numStars != 3.0) {
+            hide(dailyunfilled_star_1)
+            hide(dailyunfilled_star_2)
+            hide(dailyunfilled_star_3)
+            show(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            hide(dailyhalf_star_1)
+            hide(dailyhalf_star_2)
+            hide(dailyhalf_star_3)
+            hide(dailyhalf_star_4)
+            hide(dailyhalf_star_5)
+            numStars = 3.0
+        }
+
+        else{
+            hide(dailyunfilled_star_1)
+            hide(dailyunfilled_star_2)
+            show(dailyunfilled_star_3)
+            show(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            show(dailyhalf_star_3)
+            numStars = 2.5
+        }
     }
 
     private fun DailyStar_4() {
-        hide(dailyunfilled_star_1)
-        hide(dailyunfilled_star_2)
-        hide(dailyunfilled_star_3)
-        hide(dailyunfilled_star_4)
-        show(dailyunfilled_star_5)
+        if(numStars != 4.0) {
+            hide(dailyunfilled_star_1)
+            hide(dailyunfilled_star_2)
+            hide(dailyunfilled_star_3)
+            hide(dailyunfilled_star_4)
+            show(dailyunfilled_star_5)
+
+            hide(dailyhalf_star_1)
+            hide(dailyhalf_star_2)
+            hide(dailyhalf_star_3)
+            hide(dailyhalf_star_4)
+            hide(dailyhalf_star_5)
+            numStars = 4.0
+        }
+
+        else{
+            show(dailyunfilled_star_4)
+
+            show(dailyhalf_star_4)
+            numStars = 3.5
+        }
     }
 
     private fun DailyStar_5() {
-        hide(dailyunfilled_star_1)
-        hide(dailyunfilled_star_2)
-        hide(dailyunfilled_star_3)
-        hide(dailyunfilled_star_4)
-        hide(dailyunfilled_star_5)
+        if(numStars != 5.0) {
+            hide(dailyunfilled_star_1)
+            hide(dailyunfilled_star_2)
+            hide(dailyunfilled_star_3)
+            hide(dailyunfilled_star_4)
+            hide(dailyunfilled_star_5)
+
+            hide(dailyhalf_star_1)
+            hide(dailyhalf_star_2)
+            hide(dailyhalf_star_3)
+            hide(dailyhalf_star_4)
+            hide(dailyhalf_star_5)
+            numStars = 5.0
+        }
+        else{
+            show(dailyunfilled_star_5)
+
+            show(dailyhalf_star_5)
+            numStars = 4.5
+        }
     }
 
 

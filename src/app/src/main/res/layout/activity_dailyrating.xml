@@ -21,6 +21,8 @@
         android:layout_marginTop="300dp"
         android:background="#00F97979" />
 
+
+
     <ImageView
         android:id="@+id/dailyfilled_star_1"
         android:layout_width="wrap_content"
@@ -37,6 +39,15 @@
         android:layout_marginTop="309dp"
         app:srcCompat="@drawable/star_unfilled" />
 
+    <ImageView
+        android:id="@+id/dailyhalf_star_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="309dp"
+        app:srcCompat="@drawable/half_filled_star"
+        android:visibility="gone"/>
+
     <Button
         android:id="@+id/dailyrating_button_2"
         android:layout_width="75dp"
@@ -44,6 +55,8 @@
         android:layout_marginLeft="95dp"
         android:layout_marginTop="300dp"
         android:background="#00F97979" />
+
+
 
     <ImageView
         android:id="@+id/dailyfilled_star_2"
@@ -61,6 +74,15 @@
         android:layout_marginTop="309dp"
         app:srcCompat="@drawable/star_unfilled" />
 
+    <ImageView
+        android:id="@+id/dailyhalf_star_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="309dp"
+        app:srcCompat="@drawable/half_filled_star"
+        android:visibility="gone"/>
+
     <Button
         android:id="@+id/dailyrating_button_3"
         android:layout_width="75dp"
@@ -68,6 +90,8 @@
         android:layout_marginLeft="170dp"
         android:layout_marginTop="300dp"
         android:background="#00F97979"/>
+
+
 
     <ImageView
         android:id="@+id/dailyfilled_star_3"
@@ -85,6 +109,15 @@
         android:layout_marginTop="309dp"
         app:srcCompat="@drawable/star_unfilled" />
 
+    <ImageView
+        android:id="@+id/dailyhalf_star_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="309dp"
+        app:srcCompat="@drawable/half_filled_star"
+        android:visibility="gone"/>
+
     <Button
         android:id="@+id/dailyrating_button_4"
         android:layout_width="75dp"
@@ -92,6 +125,7 @@
         android:layout_marginLeft="247dp"
         android:layout_marginTop="300dp"
         android:background="#00F97979"/>
+
 
     <ImageView
         android:id="@+id/dailyfilled_star_4"
@@ -108,6 +142,15 @@
         android:layout_marginLeft="254dp"
         android:layout_marginTop="309dp"
         app:srcCompat="@drawable/star_unfilled" />
+
+    <ImageView
+        android:id="@+id/dailyhalf_star_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="309dp"
+        app:srcCompat="@drawable/half_filled_star"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/dailyrating_button_5"
@@ -132,6 +175,15 @@
         android:layout_marginLeft="325dp"
         android:layout_marginTop="309dp"
         app:srcCompat="@drawable/star_unfilled" />
+
+    <ImageView
+        android:id="@+id/dailyhalf_star_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="309dp"
+        app:srcCompat="@drawable/half_filled_star"
+        android:visibility="gone"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -163,29 +215,14 @@
         android:layout_marginLeft="10dp"
         tools:ignore="ContentDescription" />
 
-
-
-    <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
-
-
-
         <Button
             android:id="@+id/button_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#F97979"
-            android:layout_marginTop="100dp"
-            android:text="Sign In" />
-
-    </LinearLayout>
-
-
-
-
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:visibility="visible"
+            android:text="Continue" />
 </RelativeLayout>
 
