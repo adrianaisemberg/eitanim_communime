@@ -12,6 +12,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.eitanim.communime.api.CommuniMeService
+import com.eitanim.communime.api.requests.DailyRatingsRequests
 import com.eitanim.communime.api.requests.SignInRequests
 import com.eitanim.communime.api.requests.SignUpRequests
 import kotlinx.android.synthetic.main.activity_dailyrating.*
@@ -23,31 +24,66 @@ class DailyRatingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dailyrating)
 
+        val myPreference = MyPreference(this)
+        var lifetimeRating = myPreference.getLoginCount()
+
+
+
 
         findViewById<Button>(R.id.dailyrating_button_1).setOnClickListener {
             DailyStar_1()
             DisplayContinueButton()
+
+            lifetimeRating += 1
+            myPreference.setLoginCount(lifetimeRating)
+            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_2).setOnClickListener {
             DailyStar_2()
             DisplayContinueButton()
+            lifetimeRating += 2
+            myPreference.setLoginCount(lifetimeRating)
+            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_3).setOnClickListener {
             DailyStar_3()
             DisplayContinueButton()
+            lifetimeRating += 3
+            myPreference.setLoginCount(lifetimeRating)
+            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_4).setOnClickListener {
             DailyStar_4()
             DisplayContinueButton()
+            lifetimeRating += 4
+            myPreference.setLoginCount(lifetimeRating)
+            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_5).setOnClickListener {
             DailyStar_5()
             DisplayContinueButton()
+            lifetimeRating += 5
+            myPreference.setLoginCount(lifetimeRating)
+            testText.text = lifetimeRating.toString()
         }
+
+    }
+
+    private fun rating() {
+        async_io {
+//            val userId = "405df52e615c4f4ab62fe55fa058b25e"
+//            val Rating = numStars.toString()
+//            CommuniMeService.api().dailyRatings(DailyRatingsRequests(userId, Rating))
+
+            val intent = Intent(this@DailyRatingActivity, ActivityRating_1::class.java)
+
+            startActivity(intent)
+        }
+
 
     }
 

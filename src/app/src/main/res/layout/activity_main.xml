@@ -9,15 +9,14 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/rectangle_2__1_"
         tools:ignore="ContentDescription" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/rectangle_1"
         tools:ignore="ContentDescription" />
 

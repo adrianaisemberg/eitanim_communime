@@ -31,14 +31,6 @@
         android:layout_marginTop="309dp"
         app:srcCompat="@drawable/star_filled" />
 
-    <TextView
-        android:id="@+id/testText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="100dp"
-        android:layout_marginTop="600dp"
-        android:layout_centerHorizontal="true"/>
-
     <ImageView
         android:id="@+id/dailyunfilled_star_1"
         android:layout_width="wrap_content"

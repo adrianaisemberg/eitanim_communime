@@ -25,7 +25,10 @@ class SignInActivity : AppCompatActivity() {
         async_io {
             val email = findViewById<EditText>(R.id.text_email_signin).text.toString()
             val password = findViewById<EditText>(R.id.text_password_signin).text.toString()
-            CommuniMeService.api().signIn(SignInRequests(email, password))
+//          val foo = CommuniMeService.api().signIn(SignInRequests(email, password))
+
+            var x = 0
+            x++
         }
 
         val intent = Intent(this, DailyRatingActivity::class.java)
