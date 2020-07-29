@@ -28,7 +28,9 @@ class DailyRatingActivity : AppCompatActivity() {
         var lifetimeRating = myPreference.getLoginCount()
 
 
-
+        findViewById<Button>(R.id.button_dailyrating_continue).setOnClickListener {
+            rating()
+        }
 
         findViewById<Button>(R.id.dailyrating_button_1).setOnClickListener {
             DailyStar_1()
@@ -43,6 +45,7 @@ class DailyRatingActivity : AppCompatActivity() {
             DailyStar_2()
             DisplayContinueButton()
             lifetimeRating += 2
+
             myPreference.setLoginCount(lifetimeRating)
             testText.text = lifetimeRating.toString()
         }
@@ -75,13 +78,13 @@ class DailyRatingActivity : AppCompatActivity() {
 
     private fun rating() {
         async_io {
-//            val userId = "405df52e615c4f4ab62fe55fa058b25e"
-//            val Rating = numStars.toString()
-//            CommuniMeService.api().dailyRatings(DailyRatingsRequests(userId, Rating))
+            val userId = CurrentUser.getId()
+            val rating = numStars.toString()
+            CommuniMeService.api().dailyRatings(DailyRatingsRequests(userId, rating))
 
-            val intent = Intent(this@DailyRatingActivity, ActivityRating_1::class.java)
-
-            startActivity(intent)
+//            val intent = Intent(this@DailyRatingActivity, ActivityRating_1::class.java)
+//
+//            startActivity(intent)
         }
 
 

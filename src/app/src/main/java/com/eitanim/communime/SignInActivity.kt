@@ -9,8 +9,6 @@ import com.eitanim.communime.api.CommuniMeService
 import com.eitanim.communime.api.requests.SignInRequests
 import com.eitanim.communime.api.requests.SignUpRequests
 
-//couldn't leave it blank for some reason
-private var y:String = "yoyo"
 
 class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,14 +25,27 @@ class SignInActivity : AppCompatActivity() {
 
     private fun signIn(){
         async_io {
-            val email = findViewById<EditText>(R.id.text_email_signin).text.toString()
-            val password = findViewById<EditText>(R.id.text_password_signin).text.toString()
-            var x = CommuniMeService.api().signIn(SignInRequests(email, password))
+            val userEmail = findViewById<EditText>(R.id.text_email_signin).text.toString()
+            val userPassword = findViewById<EditText>(R.id.text_password_signin).text.toString()
+            val data= CommuniMeService.api().signIn(SignInRequests(userEmail, userPassword))
+            //a string of the data
+            val dataString = data.toString()
 
-            y = (x.toString()).substring(4, 36)
-            println("yoyoyoyoyoyo")
-            println(y)
-            println("yoyoyoyoyoyyo")
+            //these are the only two not already known from the user's input
+            //I'm getting the name here by cutting the string made from the data variable
+            var userName = dataString.substring(37)
+            var h: Int = userName.indexOf("Name")
+            userName = userName.substring(h+5)
+            var k: Int = userName.indexOf(',')
+            userName = userName.substring(0, k)
+
+            //getting the id is much easier and simpler than getting the name
+            var userId = (dataString.toString()).substring(4, 36)
+
+            CurrentUser.changeId(userId)
+            CurrentUser.changeEmail(userEmail)
+            CurrentUser.changeName(userName)
+            CurrentUser.changePassword(userPassword)
         }
     }
 
@@ -43,8 +54,8 @@ class SignInActivity : AppCompatActivity() {
 
         startActivity(intent)
     }
+}
 
-    public fun getId(): String {
-        return y
-    }
+private fun String.find(predicate: String) {
+
 }
