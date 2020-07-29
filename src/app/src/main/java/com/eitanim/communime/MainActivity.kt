@@ -16,7 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+// check if the user signed-in already
+        val myPreference = MyPreference(this)
 
+//        if(!(myPreference.getUserId().isNullOrEmpty())){
+//            signInAdvance()
+//            finish()
+//        }
         findViewById<Button>(R.id.buttonsignup).setOnClickListener {
             signUp()
         }
@@ -26,10 +32,12 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    }
 
+    private fun signInAdvance() {
+        val intent = Intent(this, DailyRatingActivity::class.java)
 
-
-
+        startActivity(intent)
     }
 
     private fun signUp(){

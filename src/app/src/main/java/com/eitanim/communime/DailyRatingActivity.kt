@@ -24,8 +24,7 @@ class DailyRatingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dailyrating)
 
-        val myPreference = MyPreference(this)
-        var lifetimeRating = myPreference.getLoginCount()
+
 
 
         findViewById<Button>(R.id.button_dailyrating_continue).setOnClickListener {
@@ -35,50 +34,33 @@ class DailyRatingActivity : AppCompatActivity() {
         findViewById<Button>(R.id.dailyrating_button_1).setOnClickListener {
             DailyStar_1()
             DisplayContinueButton()
-
-            lifetimeRating += 1
-            myPreference.setLoginCount(lifetimeRating)
-            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_2).setOnClickListener {
             DailyStar_2()
             DisplayContinueButton()
-            lifetimeRating += 2
-
-            myPreference.setLoginCount(lifetimeRating)
-            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_3).setOnClickListener {
             DailyStar_3()
             DisplayContinueButton()
-            lifetimeRating += 3
-            myPreference.setLoginCount(lifetimeRating)
-            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_4).setOnClickListener {
             DailyStar_4()
             DisplayContinueButton()
-            lifetimeRating += 4
-            myPreference.setLoginCount(lifetimeRating)
-            testText.text = lifetimeRating.toString()
         }
 
         findViewById<Button>(R.id.dailyrating_button_5).setOnClickListener {
             DailyStar_5()
             DisplayContinueButton()
-            lifetimeRating += 5
-            myPreference.setLoginCount(lifetimeRating)
-            testText.text = lifetimeRating.toString()
         }
 
     }
 
     private fun rating() {
         async_io {
-            val userId = CurrentUser.getId()
+            val userId = CurrentUser.userId
             val rating = numStars.toString()
             CommuniMeService.api().dailyRatings(DailyRatingsRequests(userId, rating))
 

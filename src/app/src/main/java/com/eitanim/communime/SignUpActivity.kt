@@ -22,17 +22,26 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun signUp() {
         async_io {
+
+
             val userName = findViewById<EditText>(R.id.text_username).text.toString()
             val email = findViewById<EditText>(R.id.text_email).text.toString()
             val password = findViewById<EditText>(R.id.text_password).text.toString()
-            val x = CommuniMeService.api().signUp(SignUpRequests(userName, email, password))
-
-            println("yoyoyoyoyoyo")
-            println(x)
-            println("yoyoyoyoyoyyo")
+            val response = CommuniMeService.api().signUp(SignUpRequests(userName, email, password))
 
 
+
+            val myPreference = MyPreference(this@SignUpActivity)
+//            myPreference.setUserId(response.Id)
+
+            var x = response.toString()
+            myPreference.setUserId(x.substring(5,36))
+
+            signUpAdvance()
         }
+    }
+
+    private fun signUpAdvance() {
         val intent = Intent(this, DailyRatingActivity::class.java)
 
         startActivity(intent)

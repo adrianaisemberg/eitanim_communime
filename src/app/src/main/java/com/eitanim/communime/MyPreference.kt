@@ -5,17 +5,17 @@ import android.content.Context
 class MyPreference (context: Context){
 
     val PREFERENCE_NAME = "SharedPreferenceExample"
-    val PREFERENCE_LOGIN_COUNT = "LoginCount"
+    val PREFERENCE_USER_ID = "USerID"
 
     val preference = context.getSharedPreferences(PREFERENCE_NAME,Context.MODE_PRIVATE)
 
-    fun getLoginCount() : Int{
-        return preference.getInt(PREFERENCE_LOGIN_COUNT, 0)
+    fun getUserId() : String{
+        return preference.getString(PREFERENCE_USER_ID, "")!!
     }
 
-    fun setLoginCount(count:Int){
+    fun setUserId(userId:String){
         val editor = preference.edit()
-        editor.putInt(PREFERENCE_LOGIN_COUNT, count)
+        editor.putString(PREFERENCE_USER_ID, userId)
         editor.apply()
     }
 }
