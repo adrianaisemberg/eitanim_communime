@@ -24,7 +24,11 @@ class SignUpActivity : AppCompatActivity() {
             val userName = findViewById<EditText>(R.id.text_username).text.toString()
             val email = findViewById<EditText>(R.id.text_email).text.toString()
             val password = findViewById<EditText>(R.id.text_password).text.toString()
-            CommuniMeService.api().signUp(SignUpRequests(userName, email, password))
+            val x = CommuniMeService.api().signUp(SignUpRequests(userName, email, password))
+
+            println("yoyoyoyoyoyo")
+            println(x)
+            println("yoyoyoyoyoyyo")
         }
     }
 }

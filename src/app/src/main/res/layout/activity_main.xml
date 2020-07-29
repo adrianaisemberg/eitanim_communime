@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/rectangle_2__1_"
-        tools:ignore="ContentDescription" />
+<!--    <ImageView-->
+<!--        android:layout_width="1200dp"-->
+<!--        android:layout_height="1200dp"-->
+<!--        android:layout_marginTop="90dp"-->
+<!--        android:src="@drawable/rectangle_2__1_"-->
+<!--        tools:ignore="ContentDescription" />-->
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/rectangle_1"
-        tools:ignore="ContentDescription" />
+<!--    <ImageView-->
+<!--        android:layout_width="1200dp"-->
+<!--        android:layout_height="1200dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:src="@drawable/rectangle_1"-->
+<!--        tools:ignore="ContentDescription" />-->
 
 
     <ImageView

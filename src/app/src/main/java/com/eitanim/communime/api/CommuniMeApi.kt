@@ -13,10 +13,10 @@ interface CommuniMeApi {
     @POST("/api/users")
     suspend fun signUp(@Body request: SignUpRequests)
 
-    @POST("/api/userslogin")
+    @POST("/api/userlogin")
     suspend fun signIn(@Body request: SignInRequests): Any
 
-    @POST("/api/dailyrating?")
+    @POST("/api/dailyrating")
     suspend fun dailyRatings(@Body request: DailyRatingsRequests)
 
     @GET("/api/activityrating")
