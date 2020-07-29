@@ -21,6 +21,15 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:text="Sign In"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/text_email_signin"
             android:inputType="text"
@@ -43,10 +52,11 @@
             android:hint="Password..."/>
         <Button
             android:id="@+id/button_signin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#F97979"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:background="@drawable/roundshapebtn"
             android:layout_marginTop="100dp"
+            android:textSize="50dp"
             android:text="Sign In" />
 
     </LinearLayout>

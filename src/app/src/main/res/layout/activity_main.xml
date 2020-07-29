@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <ImageView-->
-<!--        android:layout_width="1200dp"-->
-<!--        android:layout_height="1200dp"-->
-<!--        android:layout_marginTop="90dp"-->
-<!--        android:src="@drawable/rectangle_2__1_"-->
-<!--        tools:ignore="ContentDescription" />-->
-
-<!--    <ImageView-->
-<!--        android:layout_width="1200dp"-->
-<!--        android:layout_height="1200dp"-->
-<!--        android:layout_marginTop="200dp"-->
-<!--        android:src="@drawable/rectangle_1"-->
-<!--        tools:ignore="ContentDescription" />-->
-
 
     <ImageView
         android:layout_width="wrap_content"
@@ -29,6 +15,25 @@
         android:layout_marginTop="45dp"
         tools:ignore="ContentDescription" />
 
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_2__1_"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="6000dp"
+        android:layout_height="800dp"
+        android:src="@drawable/rectangle_1"
+        tools:ignore="ContentDescription" />
+
+
+
+
+
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
@@ -36,21 +41,28 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
+
         <Button
             android:id="@+id/buttonsignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:background="#F97979"
-            android:text="@string/signup" />
+            android:text="@string/signup"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginTop="100dp"
+            android:textSize="50dp"/>
+
 
         <Button
             android:id="@+id/buttonsignin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:background="#00FFFFFF"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rectangle_3__stroke_"
+            android:layout_marginTop="100dp"
+            android:textSize="50dp"
             android:text="@string/login" />
+
+
 
     </LinearLayout>
 

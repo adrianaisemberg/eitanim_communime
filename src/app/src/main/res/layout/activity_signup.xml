@@ -57,13 +57,17 @@
         android:hint="Password..."
         android:maxLines="1" />
 
+
     <Button
         android:id="@+id/button_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
         android:layout_marginTop="100dp"
-        android:background="#F97979"
-        android:text="Sign In" />
+        android:background="@drawable/roundshapebtn"
+        android:text="Sign Up"
+        android:textSize="50dp"
+        />
+
 
 </LinearLayout>
 
