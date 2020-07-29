@@ -16,24 +16,6 @@
         tools:ignore="ContentDescription" />
 
 
-    <ImageView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle_2__1_"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:layout_marginTop="100dp"
-        android:layout_width="6000dp"
-        android:layout_height="800dp"
-        android:src="@drawable/rectangle_1"
-        tools:ignore="ContentDescription" />
-
-
-
-
-
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
@@ -57,7 +39,7 @@
             android:id="@+id/buttonsignin"
             android:layout_width="300dp"
             android:layout_height="75dp"
-            android:background="@drawable/rectangle_3__stroke_"
+            android:background="@drawable/rectangle_3__stroke___1_"
             android:layout_marginTop="100dp"
             android:textSize="50dp"
             android:text="@string/login" />
