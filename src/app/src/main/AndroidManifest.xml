@@ -22,7 +22,7 @@
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".SignInActivity"/>
         <activity android:name=".DailyRatingActivity"/>
-        <activity android:name=".ActivityRating_1"/>
+        <activity android:name=".ActivityRating"/>
 <!--        <activity android:name="."/>-->
     </application>
 

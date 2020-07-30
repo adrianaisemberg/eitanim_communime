@@ -5,15 +5,16 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.eitanim.communime.CurrentUser.userEmail
 import com.eitanim.communime.api.CommuniMeService
 import com.eitanim.communime.api.requests.SignInRequests
+import retrofit2.http.Body
 
 
 class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
-
 
         findViewById<Button>(R.id.button_signin).setOnClickListener {
             signIn()

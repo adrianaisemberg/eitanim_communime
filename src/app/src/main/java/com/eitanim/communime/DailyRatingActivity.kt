@@ -64,9 +64,9 @@ class DailyRatingActivity : AppCompatActivity() {
             val rating = numStars.toString()
             CommuniMeService.api().dailyRatings(DailyRatingsRequests(userId, rating))
 
-//            val intent = Intent(this@DailyRatingActivity, ActivityRating_1::class.java)
-//
-//            startActivity(intent)
+            val intent = Intent(this@DailyRatingActivity, ActivityRating::class.java)
+
+            startActivity(intent)
         }
 
 

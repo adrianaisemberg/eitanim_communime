@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
 // check if the user signed-in already
         val myPreference = MyPreference(this)
 
-//        if(!(myPreference.getUserId().isNullOrEmpty())){
-//            signInAdvance()
-//            finish()
-//        }
+        if(myPreference.getUserId().isNotEmpty()){
+            signInAdvance()
+            finish()
+        }
         findViewById<Button>(R.id.buttonsignup).setOnClickListener {
             signUp()
         }

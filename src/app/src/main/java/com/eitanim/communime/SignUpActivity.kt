@@ -35,7 +35,13 @@ class SignUpActivity : AppCompatActivity() {
 //            myPreference.setUserId(response.Id)
 
             var x = response.toString()
-            myPreference.setUserId(x.substring(5,36))
+//            myPreference.setUserId(x.substring(5,36))
+
+//            x = (x.substring(5,36))
+
+            println("yoyoyoyo")
+            println(x)
+            println("yoyoyoyo")
 
             signUpAdvance()
         }
