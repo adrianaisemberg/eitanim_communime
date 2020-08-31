@@ -32,12 +32,12 @@ class SignUpActivity : AppCompatActivity() {
 
 
             val myPreference = MyPreference(this@SignUpActivity)
-//            myPreference.setUserId(response.Id)
+            myPreference.setUserId(response.Id)
 
             var x = response.toString()
-//            myPreference.setUserId(x.substring(5,36))
+            myPreference.setUserId(x.substring(5,36))
 
-//            x = (x.substring(5,36))
+            x = (x.substring(5,36))
 
             println("yoyoyoyo")
             println(x)

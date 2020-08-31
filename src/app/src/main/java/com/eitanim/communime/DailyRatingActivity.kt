@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.eitanim.communime.CurrentUser.userId
 import com.eitanim.communime.api.CommuniMeService
 import com.eitanim.communime.api.requests.DailyRatingsRequests
 import com.eitanim.communime.api.requests.SignInRequests
@@ -71,6 +72,7 @@ class DailyRatingActivity : AppCompatActivity() {
 
 
     }
+
 
     private fun DisplayContinueButton(){
         button_dailyrating_continue.visibility = VISIBLE

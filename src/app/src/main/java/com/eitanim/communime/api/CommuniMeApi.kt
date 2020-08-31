@@ -23,6 +23,6 @@ interface CommuniMeApi {
     @POST("/api/dailyrating")
     suspend fun dailyRatings(@Body request: DailyRatingsRequests)
 
-    @GET("/api/activityrating")
-    suspend fun activityRatings(@Body request: ActivityRatingsRequests)//: List<ActivityRating>
+    @POST("/api/activityrating")
+    suspend fun activityRatings(@Body request: ActivityRatingsRequests)
 }

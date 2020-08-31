@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="137dp"
+        android:layout_height="136dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back Aur"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/buttonsignup"
+
+            android:text="Rate My Day"
+            android:layout_width="370dp"
+            android:layout_height="120dp"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginTop="300dp"
+            android:textSize="50dp"/>
+
+
+        <Button
+            android:id="@+id/buttonsignin"
+            android:layout_width="370dp"
+            android:layout_height="120dp"
+            android:background="@drawable/rectangle_3__stroke___1_"
+            android:layout_marginTop="50dp"
+            android:textSize="50dp"
+            android:text="Rate My Activities" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

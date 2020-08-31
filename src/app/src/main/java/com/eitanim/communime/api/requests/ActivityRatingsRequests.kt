@@ -1,7 +1,7 @@
 package com.eitanim.communime.api.requests
 
 data class ActivityRatingsRequests(
-val userId: String,
-val Activity: String,
-val Rating: String
+    val userId: String,
+    val ActivityName: String,
+    val Rating: String
 )

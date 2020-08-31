@@ -6,32 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-
-    <Button
-        android:id="@+id/activityrating_button_1"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="390dp"
-        android:background="#00F97979" />
-
-
-
+    <!--    <sequence android:name="yoyo">-->
 
     <EditText
         android:id="@+id/text_Activity_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
         android:layout_marginRight="50dp"
         android:hint="What impacted you today?"
         android:inputType="text"
-        android:maxLines="2" />
+        android:maxLines="2"
+        android:textAlignment="center" />
 
-    <group android:name="yoyo">
+    <Button
+            android:id="@+id/activityrating_button_1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="390dp"
+            android:background="#00F97979" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -202,7 +197,7 @@
         app:srcCompat="@drawable/half_filled_star"
         android:visibility="gone"/>
 
-    </group>
+<!--    </sequence>-->
 
     <ImageView
         android:layout_width="wrap_content"
@@ -215,7 +210,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Activity x"
+        android:text="Activity"
         android:textSize="50dp"
         android:layout_marginTop="140dp"/>
 
@@ -235,16 +230,6 @@
         android:layout_marginLeft="10dp"
         tools:ignore="ContentDescription" />
 
-        <Button
-            android:id="@+id/button_activityrating_continue"
-            android:layout_width="140dp"
-            android:layout_height="50dp"
-            android:textSize="25dp"
-            android:background="@drawable/roundshapebtn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="550dp"
-            android:visibility="gone"
-            android:text="Continue" />
 
 
     <LinearLayout
@@ -253,30 +238,28 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
         android:orientation="vertical">
 
 
         <Button
-            android:id="@+id/buttonAddAnother"
-
-            android:text="add another"
+            android:id="@+id/buttonfinish"
+            android:text="finish"
             android:layout_width="300dp"
             android:layout_height="75dp"
             android:background="@drawable/roundshapebtn"
             android:layout_marginTop="100dp"
-            android:textSize="40dp"
-            />
+            android:textSize="50dp"/>
 
 
         <Button
-            android:id="@+id/buttonFinish"
+            android:id="@+id/buttonAddAnother"
             android:layout_width="300dp"
             android:layout_height="75dp"
             android:background="@drawable/rectangle_3__stroke___1_"
             android:layout_marginTop="30dp"
-            android:textSize="50dp"
-            android:text="finish" />
+            android:textSize="40dp"
+            android:text="Add Another"
+            android:visibility="invisible"/>
 
 
 

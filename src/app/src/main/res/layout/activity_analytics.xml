@@ -6,216 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/rectangle_3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="302dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher_foreground"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/communime" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/hambmenu" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            app:srcCompat="@drawable/hows_your_day_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectangle_3"
+            android:text="\n 5"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/roundshapebtn"
+                android:text="yoyo" />
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/roundshapebtn"
+                android:text="yoyo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectangle_3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/roundshapebtn"
+                android:text="yoyo" />
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/roundshapebtn"
+                android:text="yoyo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/dailyrating_button_1"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="300dp"
-        android:background="#00F97979" />
-
-
-
-    <ImageView
-        android:id="@+id/dailyfilled_star_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_filled" />
-
-    <ImageView
-        android:id="@+id/dailyunfilled_star_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_unfilled" />
-
-    <ImageView
-        android:id="@+id/dailyhalf_star_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/half_filled_star"
-        android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/dailyrating_button_2"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="300dp"
-        android:background="#00F97979" />
-
-
-
-    <ImageView
-        android:id="@+id/dailyfilled_star_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_filled" />
-
-    <ImageView
-        android:id="@+id/dailyunfilled_star_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_unfilled" />
-
-    <ImageView
-        android:id="@+id/dailyhalf_star_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/half_filled_star"
-        android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/dailyrating_button_3"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="300dp"
-        android:background="#00F97979"/>
-
-
-
-    <ImageView
-        android:id="@+id/dailyfilled_star_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="178dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_filled" />
-
-    <ImageView
-        android:id="@+id/dailyunfilled_star_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="178dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_unfilled" />
-
-    <ImageView
-        android:id="@+id/dailyhalf_star_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="178dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/half_filled_star"
-        android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/dailyrating_button_4"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="247dp"
-        android:layout_marginTop="300dp"
-        android:background="#00F97979"/>
-
-
-    <ImageView
-        android:id="@+id/dailyfilled_star_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="254dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_filled" />
-
-    <ImageView
-        android:id="@+id/dailyunfilled_star_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="254dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_unfilled" />
-
-    <ImageView
-        android:id="@+id/dailyhalf_star_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="254dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/half_filled_star"
-        android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/dailyrating_button_5"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="300dp"
-        android:background="#00F97979"/>
-
-    <ImageView
-        android:id="@+id/dailyfilled_star_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="325dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_filled" />
-
-    <ImageView
-        android:id="@+id/dailyunfilled_star_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="325dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/star_unfilled" />
-
-    <ImageView
-        android:id="@+id/dailyhalf_star_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="325dp"
-        android:layout_marginTop="309dp"
-        app:srcCompat="@drawable/half_filled_star"
-        android:visibility="gone"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/communime"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp"
-        app:srcCompat="@drawable/hows_your_day_" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/hambmenu"
-        android:layout_marginTop="27dp"
-        android:layout_marginLeft="320dp"/>
-
-    <ImageView
-        android:layout_width="85dp"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_foreground"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp"
-        tools:ignore="ContentDescription" />
-
-        <Button
             android:id="@+id/button_dailyrating_continue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

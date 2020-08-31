@@ -17,12 +17,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 // check if the user signed-in already
-        val myPreference = MyPreference(this)
 
-        if(myPreference.getUserId().isNotEmpty()){
-            signInAdvance()
-            finish()
-        }
+//        val myPreference = MyPreference(this)
+//
+//        if(myPreference.getUserId().isNotEmpty()){
+//            signInAdvance()
+//            finish()
+//        }
+
         findViewById<Button>(R.id.buttonsignup).setOnClickListener {
             signUp()
         }
